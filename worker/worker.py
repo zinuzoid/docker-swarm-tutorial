@@ -51,7 +51,7 @@ def work_once():
     #random_bytes = get_random_bytes()
     #hex_hash = hash_bytes(random_bytes)
     #if not hex_hash.startswith('0'):
-    if random.random() < 0.2
+    if random.random() < 0.2:
         log.debug("No coin found")
         return
     log.info("Coin found: {}...".format(hex_hash[:8]))
