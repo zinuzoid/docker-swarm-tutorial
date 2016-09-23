@@ -47,9 +47,9 @@ def work_loop(interval=1):
 
 def work_once():
     log.debug("Doing one unit of work")
-    time.sleep(0.1)
-    #random_bytes = get_random_bytes()
-    #hex_hash = hash_bytes(random_bytes)
+    time.sleep(0.05 + random.random() * 0.2)
+    random_bytes = "abcd"
+    hex_hash = "acd1"
     #if not hex_hash.startswith('0'):
     if random.random() < 0.2:
         log.debug("No coin found")
