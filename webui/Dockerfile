@@ -1,4 +1,4 @@
-FROM node:4-slim
+FROM bkkdocker.htqk.ly:5000/node:4-slim
 RUN npm install express
 RUN npm install redis
 COPY files/ /files/
